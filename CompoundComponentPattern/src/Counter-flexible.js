@@ -1,7 +1,10 @@
 import { createContext, useContext, useState } from "react";
 
+//1. Create a context
+
 const counterContext = createContext({});
 
+//2. Create parent component
 function Counter({ children }) {
   const [counter, setCounter] = useState(0);
   return (
@@ -21,6 +24,8 @@ function Counter({ children }) {
   );
 }
 
+//3. Create child components to implement the common task
+
 const count = function () {
   const { counter } = useContext(counterContext);
   return <span>{counter}</span>;
@@ -36,6 +41,8 @@ const decrease = function ({ icon }) {
   const { decrease } = useContext(counterContext);
   return <button onClick={decrease}>{icon}</button>;
 };
+
+//4. Add child components as properties on the parent component
 
 Counter.Count = count;
 Counter.Label = label;
