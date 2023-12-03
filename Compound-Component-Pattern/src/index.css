@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0.6em 0;
+}
+
+.accordion-heading {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  margin-bottom: 1em;
+}
+.accordion-heading:last-child {
+  margin: 0;
+}
+.accordion-heading p {
+  flex-grow: 1;
+}
+.accordion-heading button {
+  border: none;
+  padding: 0.3em 1.6em;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.accordion-content {
+  margin: 1em auto;
+  background: rgba(255, 141, 141, 0.22);
+  padding: 1em 3em;
+  width: 80%;
+}
+
+.items {
+  padding: 1em 2em;
+}
+
+.items > div {
+  border: 1px solid rgba(96, 97, 96, 0.399);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.items > div:last-child {
+  margin-bottom: 0;
+}
+.items > div > div:last-child {
+  display: flex;
+  gap: 1em;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgba(90, 90, 90, 0.3);
+
+  z-index: 1;
+}
+
+.modal {
+  border: 3px solid orange;
+  padding: 3em;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  font-weight: bold;
+  font-size: 3rem;
+  z-index: 3;
+  cursor: pointer;
+}
