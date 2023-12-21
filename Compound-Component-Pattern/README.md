@@ -1,8 +1,17 @@
-# React + Vite
+# Compound Component Pattern
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An advanced react design pattern that gives us a flexible interface which makes working with components a breeze.
 
-Currently, two official plugins are available:
+## Three examples covered in this section are :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Counter
+- Modal
+- Accordion
+
+### How to get started
+
+- Clone the repository
+- Move into this folder
+- Run `npm install` in terminal
+- Run `npm run dev` to open the development server
+- Comment and uncomment code in **App.jsx** to render different components

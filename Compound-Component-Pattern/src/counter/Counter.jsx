@@ -24,17 +24,23 @@ const Label = ({ children }) => {
 
 const Count = () => {
   const { count } = useContext(CounterContext);
-  return <div>{count}</div>;
+  return <span style={{ fontSize: '1.3rem' }}>{count}</span>;
 };
 
 const Increment = ({ icon }) => {
   const { increaseCount } = useContext(CounterContext);
-  return <button onClick={increaseCount}>{icon}</button>;
+  return <button style={{
+    padding: '0.1em 0.4em',
+    margin: '0 1em'
+  }} onClick={increaseCount}>{icon}</button>;
 };
 
 const Decrement = ({ icon }) => {
   const { decreaseCount } = useContext(CounterContext);
-  return <button onClick={decreaseCount}>{icon}</button>;
+  return <button style={{
+    padding: '0.1em 0.4em',
+    margin: '0 1em'
+  }} onClick={decreaseCount}>{icon}</button>;
 };
 
 //4. Add child components as properties to the parent
