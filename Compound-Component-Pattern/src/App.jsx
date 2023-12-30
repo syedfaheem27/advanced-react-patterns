@@ -7,9 +7,9 @@ const App = () => {
   return (
     <Counter>
       <Counter.Label>Counter using compound component pattern</Counter.Label>
-      <Counter.Increment icon="+" />
-      <Counter.Count />
       <Counter.Decrement icon="-" />
+      <Counter.Count />
+      <Counter.Increment icon="+" />
     </Counter>
   );
 };
